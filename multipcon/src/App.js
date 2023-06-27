@@ -1,25 +1,31 @@
-import { BrowserRouter } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
-// routes
-import Router from './routes';
-// theme
-import ThemeProvider from './theme';
-// components
-import { StyledChart } from './components/chart';
-import ScrollToTop from './components/scroll-to-top';
+import './App.css';
+import AppHeader from './components/header/Appheader'
+import Skills from './components/skills/Skills'
+import Introduction from './components/introduction/Introduction';
+import ExperiencesGrid from './components/experiences/Experiencesgrid';
+import Footer from './components/footer/Footer';
 
-// ----------------------------------------------------------------------
-
-export default function App() {
+function App() {
   return (
-    <HelmetProvider>
-      <BrowserRouter>
-        <ThemeProvider>
-          <ScrollToTop />
-          <StyledChart />
-          <Router />
-        </ThemeProvider>
-      </BrowserRouter>
-    </HelmetProvider>
+    <div className="App" id="Home">
+      <AppHeader/>
+
+      <div id="About">
+        <Introduction/>
+      </div>
+      
+      <div id="Work">
+        <ExperiencesGrid/>
+      </div>
+      
+      <div id="Skills">
+        <Skills/>
+      </div>
+
+      <Footer/>
+      
+    </div>
   );
 }
+
+export default App;
