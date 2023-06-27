@@ -11,8 +11,8 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import ProfilePicture from '../../images/flutter.png'
-import GitHubIcon from '@mui/icons-material/GitHub';
+import MultipconLogoPNG from '../../images/multipcon.png';//this is just in case the svg does not work
+import MultipconLogoSVG from '../../images/multipcon.svg';
 import CustomLinks from '../customlinks/CustomLinks';
 
 
@@ -33,10 +33,10 @@ const Appheader = () => {
 
 
   return (
-    <AppBar position="sticky" sx={{bgcolor:"#131631"}}>
+    <AppBar position="sticky" sx={{bgcolor:"#1a1a1c"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        <Avatar alt="Deon Vosloo" src={ProfilePicture}  sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
+        <Avatar alt="Multi Paint & Construction" src={MultipconLogoSVG}  sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
           <Typography
             variant="h6"
             noWrap
@@ -52,7 +52,7 @@ const Appheader = () => {
               textDecoration: 'none',
             }}
           >
-            Deon Vosloo
+            Multi Paint & Construction
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -93,7 +93,7 @@ const Appheader = () => {
               ))}
             </Menu>
           </Box>
-          <Avatar alt="Deon Vosloo" src={ProfilePicture}  sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <Avatar alt="Multi Paint & Construction" src={MultipconLogoSVG}  sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -110,7 +110,7 @@ const Appheader = () => {
               textDecoration: 'none',
             }}
           >
-            Deon Vosloo
+            Multipcon
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -122,14 +122,6 @@ const Appheader = () => {
                 <CustomLinks pageValue={page} CustomColorValue={"white"}/>
               </Button>
             ))}
-          </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Click me to open my Github profile" sx={{fontFamily: `Ubuntu, sans-serif`}}>
-              <IconButton onClick={() => window.open("https://github.com/DeonVosloo", "_blank")} sx={{ p: 0 }}>
-                <GitHubIcon sx={{color: "white"}}/>
-              </IconButton>
-            </Tooltip>
           </Box>
         </Toolbar>
       </Container>
