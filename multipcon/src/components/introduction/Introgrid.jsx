@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import Introtab from './Introtab';
+// import Introtab from './Introtab';
 import Banner from './Banner';
 
 
