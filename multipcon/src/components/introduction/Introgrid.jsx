@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-// import Introtab from './Introtab';
 import Banner from './Banner';
 
 
@@ -14,7 +13,6 @@ export default function Introgrid() {
           <Banner/>
         </Grid>
         <Grid item xs={12} sm={11.5} md={10.5} lg={8} sx={{marginTop: "6%"}} >
-          {/* <Introtab/> */}
         </Grid>
       </Grid>
     </Box>
