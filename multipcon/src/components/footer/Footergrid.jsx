@@ -29,7 +29,7 @@ export default function FooterGrid()
 {
   return (
     <Box sx={{ flexGrow: 1}}>
-      <Grid container spacing={2} sx={{display: "flex", justifyContent: "center" }}>
+      <Grid container spacing={1} sx={{display: "flex", justifyContent: "center" }}>
         <Grid item xs={9.5} md={8}>
         <Box sx={{ flexGrow: 1, display: { xs: 'flex'}, justifyContent: "start" }}>      
               {pages.map((page) => (
