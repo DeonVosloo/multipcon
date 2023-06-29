@@ -9,8 +9,8 @@ import BannerImageSVG from '../../images/banner.svg';
 function Banner() {
   return (
       <Container maxWidth="5500" sx={{backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center",
-    backgroundImage: `url(${BannerImageSVG})`, height: {xl: '130%', xs: '130%', md:'130%', lg: '130%' }, border: {lg: 2, sm:0, md:1.5},
-     borderRadius: {lg:3, xs:0}, borderColor: {lg:'grey.600'} }} >
+    backgroundImage: `url(${BannerImageSVG})`, height: {xl: '130%', xs: '130%', md:'130%', lg: '130%' }, border: {lg: 0, sm:0, md:0},
+     borderRadius: {lg:3, md:3, xs:0} }} >
         <Box component="div">
     <Grid>
       <Grid item md={12}>
