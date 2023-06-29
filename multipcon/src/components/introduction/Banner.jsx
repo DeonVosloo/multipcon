@@ -3,13 +3,12 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import BannerImagePNG from '../../images/banner.png';
-import BannerImageSVG from '../../images/banner.svg';
+import BannerImage from '../../images/banner.svg';
 
 function Banner() {
   return (
       <Container maxWidth="5500" sx={{backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center",
-    backgroundImage: `url(${BannerImageSVG})`, height: {xl: '130%', xs: '130%', md:'130%', lg: '130%' }, border: {lg: 0, sm:0, md:0},
+    backgroundImage: `url(${BannerImage})`, height: {xl: '130%', xs: '130%', md:'130%', lg: '130%' }, border: {lg: 0, sm:0, md:0},
      borderRadius: {lg:5, md:5, xs:0} }} >
         <Box component="div">
     <Grid>
