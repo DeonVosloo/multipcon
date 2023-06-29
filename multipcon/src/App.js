@@ -14,10 +14,10 @@ function App() {
       <div id="About">
         <Introduction/>
       </div>
-      <ConstructionIcon sx={{fontSize: 72}}/><Typography variant="h1" color="initial">This website is still under construction and is not near completed </Typography><ConstructionIcon sx={{fontSize: 72}}/>
       <div id="Work">
         <ExperiencesGrid/>
       </div>
+      <ConstructionIcon sx={{fontSize: 72}}/><Typography variant="h1" color="initial">This website is still under construction</Typography><ConstructionIcon sx={{fontSize: 72}}/>
 
       <Footer/>
       
