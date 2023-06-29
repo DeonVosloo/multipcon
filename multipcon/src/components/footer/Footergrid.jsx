@@ -58,7 +58,13 @@ export default function FooterGrid()
 
         <Grid item xs={11} md={2.375} sx={{display: "flex", justifyContent: { xs: 'center', md: 'start' }, marginTop: "1%", marginBottom: "1.5%", color: "white", fontFamily: `Ubuntu, sans-serif`}}>
           <Box>
-            <Typography variant="p" color="" onClick={() => window.open("https://github.com/DeonVosloo", "_blank")}>{"Created & Designed by Deon Vosloo"}</Typography>
+            
+            <Tooltip title="Click me to open the website creators github" sx={{fontFamily: `Ubuntu, sans-serif`}}>
+              <Button variant="text" onClick={() => window.open("https://github.com/DeonVosloo", "_blank")}>
+                <Typography variant="p" color="white" sx={{textTransform: "none"}}>{"Created & Designed by Deon Vosloo"}</Typography>
+              </Button>            
+                
+              </Tooltip>
           </Box>
         </Grid>
         
