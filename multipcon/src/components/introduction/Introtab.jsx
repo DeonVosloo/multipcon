@@ -50,8 +50,8 @@ export default function Introtab() {
   };
 
   return (
-    <Box sx={{ bgcolor: '#131631', textAlign: "start",}}>
-      <AppBar position="static" sx={{bgcolor: "#131631"}}>
+    <Box sx={{ bgcolor: '#1a1a1c', textAlign: "start",}}>
+      <AppBar position="static" sx={{bgcolor: "#1a1a1c"}}>
         <Tabs
           value={value}
           onChange={handleChange}
@@ -62,7 +62,7 @@ export default function Introtab() {
           sx={{textTransform: "none", fontFamily: `Ubuntu, sans-serif`,}}
         >
           <Tab label="readme.js" {...a11yProps(0)} sx={{textTransform: "none", fontSize: 12, fontFamily: `Ubuntu, sans-serif`, display: "flex"}}/>
-          <Tab label="" disabled={true}/>
+          <Tab label="Secondary" {...a11yProps(0)} sx={{textTransform: "none", fontSize: 12, fontFamily: `Ubuntu, sans-serif`, display: "flex"}}/>
           <Tab label="" disabled={true}/>
           <Tab label="" disabled={true}/>
           <Tab label="" disabled={true}/>
@@ -74,6 +74,41 @@ export default function Introtab() {
       
 
         <TabPanel value={value} index={0} dir={theme.direction} width={"85%"} sx={{textColor: "white",}}>
+          <Typography variant="p" color="white" textAlign={"start"} padding={"2%"} sx={{fontFamily: `Ubuntu, sans-serif`}}>
+          I'm Deon Vosloo, a  
+          <Typography variant="p" color="#308fe8" textAlign={"start"} sx={{fontFamily: `Ubuntu, sans-serif`}}>
+           {" Full Stack Software Developer "}
+          </Typography> 
+          based in Pretoria, South Africa. 
+          I offer a strong foundation in software development and programming 
+          </Typography> <br/>
+          <Typography variant="p" color="white" textAlign={"start"} padding={"2%"} sx={{fontFamily: `Ubuntu, sans-serif`}}>
+                principles across
+                
+            <Typography variant="p" color="#308fe8" textAlign={"start"} sx={{fontFamily: `Ubuntu, sans-serif`}}>
+           {"  multiple platforms "}
+          </Typography> 
+                . I have good communication and interpersonal skills which allows me to work with ease in
+                a 
+                <Typography variant="p" color="#308fe8" textAlign={"start"} sx={{fontFamily: `Ubuntu, sans-serif`}}>
+           {"  team"}
+          </Typography> 
+                . 
+            </Typography> <br/>
+          <Typography variant="p" color="white" textAlign={"start"}></Typography> <br/>
+          <Typography variant="p" color="white" textAlign={"start"} padding={"2%"} sx={{fontFamily: `Ubuntu, sans-serif`}}>
+          I thrive on challenges, adapt well to changes and work well under pressure. I am
+          knowledgeable in technology and writing code to create systems that are 
+            </Typography> <br/>
+            <Typography variant="p" color="white" textAlign={"start"} padding={"2%"} sx={{fontFamily: `Ubuntu, sans-serif`}}>
+            reliable, user-friendly and 
+            <Typography variant="p" color="#308fe8" textAlign={"start"} sx={{fontFamily: `Ubuntu, sans-serif`}}>
+           {"  reusable"}
+          </Typography>.
+            </Typography> <br/>
+        </TabPanel>
+
+        <TabPanel value={value} index={1} dir={theme.direction} width={"85%"} sx={{textColor: "white",}}>
           <Typography variant="p" color="white" textAlign={"start"} padding={"2%"} sx={{fontFamily: `Ubuntu, sans-serif`}}>
           I'm Deon Vosloo, a  
           <Typography variant="p" color="#308fe8" textAlign={"start"} sx={{fontFamily: `Ubuntu, sans-serif`}}>
