@@ -9,14 +9,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import MultipconLogoPNG from '../../images/multipcon.png';//this is just in case the svg does not work
-import MultipconLogoSVG from '../../images/multipcon.svg';
+import MultipconLogo from '../../images/multipcon.svg';
 import CustomLinks from '../customlinks/CustomLinks';
 
 
-const pages = ['Home', 'About', 'Work', "Skills"];
+const pages = ['Home', 'About', 'Work', "Contact Us"];
 
 const Appheader = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -36,7 +34,7 @@ const Appheader = () => {
     <AppBar position="sticky" sx={{bgcolor:"#1a1a1c"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        <Avatar alt="Multi Paint & Construction" src={MultipconLogoSVG}  sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
+        <Avatar alt="Multi Paint & Construction" src={MultipconLogo}  sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
           <Typography
             variant="h6"
             noWrap
@@ -93,7 +91,7 @@ const Appheader = () => {
               ))}
             </Menu>
           </Box>
-          <Avatar alt="Multi Paint & Construction" src={MultipconLogoSVG}  sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <Avatar alt="Multi Paint & Construction" src={MultipconLogo}  sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
