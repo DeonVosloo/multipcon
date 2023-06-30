@@ -1,9 +1,8 @@
 import './App.css';
 import AppHeader from './components/header/Appheader'
-import Introduction from './components/introduction/Introduction';
-import ExperiencesGrid from './components/experiences/Experiencesgrid';
+
 import Footer from './components/footer/Footer';
-import {  Route, Routes } from 'react-router-dom';
+import {  Route, Routes, Navigate, useRoutes } from 'react-router-dom';
 import Home from './pages/Home';
 import Page404 from './pages/Page404';
 
@@ -17,8 +16,10 @@ function App() {
      
     <Routes>
       <Route exact path='/' element={<Home/>}/>
-      <Route exact path='/404' element={<Page404/>}/>
+      <Route path='/Home' element={<Navigate exact to={'/'}/>}/>
 
+      <Route path='/404' element={<Page404/>}/>
+      <Route path='*' Navigate to='/404' element={<Navigate to={'/404'}/>} />
     </Routes>
 
     <Footer/>
