@@ -2,7 +2,7 @@ import './App.css';
 import AppHeader from './components/header/Appheader'
 
 import Footer from './components/footer/Footer';
-import {  Route, Routes, Navigate, useRoutes } from 'react-router-dom';
+import {  Route, Routes, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Page404 from './pages/Page404';
 
