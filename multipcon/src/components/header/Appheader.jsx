@@ -14,7 +14,7 @@ import MultipconLogo from '../../images/multipcon.svg';
 import CustomLinks from '../customlinks/CustomLinks';
 
 
-const pages = ['Home', 'About', 'Work', "Contact Us"];
+const pages = ['Home', 'About', 'Work', 'Contact Us'];
 
 const Appheader = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

@@ -1,9 +1,10 @@
 import React from 'react'
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 let CustomLinks = (props) => {
   return (
-    <HashLink style={{textDecoration: "none", color: `${props.CustomColorValue}`, scrollBehavior: "smooth"}} to={`#${props.pageValue}`}>{props.pageValue}</HashLink>
+    <Link style={{textDecoration: "none", color: `${props.CustomColorValue}`, scrollBehavior: "smooth"}} to={`/${props.pageValue}`}>{props.pageValue}</Link>
   )
 }
 

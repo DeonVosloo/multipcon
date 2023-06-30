@@ -3,23 +3,27 @@ import AppHeader from './components/header/Appheader'
 import Introduction from './components/introduction/Introduction';
 import ExperiencesGrid from './components/experiences/Experiencesgrid';
 import Footer from './components/footer/Footer';
+import {  Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Page404 from './pages/Page404';
+
+
 
 function App() {
   return (
-    <div className="App" id="Home">
-      <AppHeader/>
+    <>
+    
+       <AppHeader/>
+     
+    <Routes>
+      <Route exact path='/' element={<Home/>}/>
+      <Route exact path='/404' element={<Page404/>}/>
 
-      <div id="About">
-        <Introduction/>
-      </div>
-      
-      <div id="Work">
-        <ExperiencesGrid/>
-      </div>
+    </Routes>
 
-      <Footer/>
-      
-    </div>
+    <Footer/>
+    </>
+    
   );
 }
 
