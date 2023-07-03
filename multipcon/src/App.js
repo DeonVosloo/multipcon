@@ -19,7 +19,7 @@ function App() {
       <Route path='/Home' element={<Navigate exact to={'/'}/>}/>
 
       <Route path='/404' element={<Page404/>}/>
-      <Route path='*' Navigate to='/404' element={<Navigate to={'/404'}/>} />
+      <Route path='*' element={<Navigate to={'/404'}/>} />
     </Routes>
 
     <Footer/>
