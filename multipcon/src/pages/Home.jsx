@@ -16,7 +16,7 @@ function Home() {
         <Experiences/>
       </div>
       <Grid xl={12}>
-        <ConstructionIcon sx={{fontSize: 44}}/><Typography variant="h4" color="initial">This website is under construction</Typography><ConstructionIcon sx={{fontSize: 44}}/>
+        <ConstructionIcon sx={{fontSize: 44, alignSelf: 'center'}}/><Typography variant="h4" color="initial" sx={{alignSelf: 'center'}}>This website is under construction</Typography><ConstructionIcon sx={{fontSize: 44, alignSelf: 'center'}}/>
       </Grid>
       
 
