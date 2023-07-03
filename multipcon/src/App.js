@@ -5,16 +5,17 @@ import Footer from './components/footer/Footer';
 
 function App() {
   return (
-    <div className="App" id="Home">
-      <AppHeader/>
+    <>
+    
+       <AppHeader/>
+     
+    <Routes>
+      <Route exact path='/' element={<Home/>}/>
+      <Route path='/Home' element={<Navigate exact to={'/'}/>}/>
 
-      <div id="About">
-        <Introduction/>
-      </div>
-      
-      <div id="Work">
-        <ExperiencesGrid/>
-      </div>
+      <Route path='/404' element={<Page404/>}/>
+      <Route path='*' element={<Navigate to={'/404'}/>} />
+    </Routes>
 
     <Footer/>
     </>
