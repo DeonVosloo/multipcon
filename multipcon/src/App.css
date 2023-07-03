@@ -2,6 +2,9 @@
   text-align: center;
   scroll-behavior: smooth;
 }
+.Page404 {
+  background-image: 'multipcon\src\images\404.png';
+}
 html
 {
   /* background: rgb(238,174,202);

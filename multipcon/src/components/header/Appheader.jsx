@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import MultipconLogo from '../../images/multipcon.svg';
 import CustomLinks from '../customlinks/CustomLinks';
-
+import { Link, Navigate } from 'react-router-dom';
 
 const pages = ['Home', 'About', 'Work', 'Contact Us'];
 
@@ -34,12 +34,15 @@ const Appheader = () => {
     <AppBar position="sticky" sx={{bgcolor:"#1a1a1c"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        <Avatar alt="Multi Paint & Construction" src={MultipconLogo}  sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
+        <Link to='/'>
+        <Avatar alt="Multi Paint & Construction" src={MultipconLogo} element={<Navigate exact to={'/'}/>}  sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
+        </Link>
+        <Link to='/'>
           <Typography
             variant="h6"
             noWrap
             component="a"
-             href=""
+            href=""
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -52,7 +55,7 @@ const Appheader = () => {
           >
             Multi Paint & Construction
           </Typography>
-
+          </Link>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
