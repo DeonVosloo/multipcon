@@ -37,7 +37,7 @@ const Appheader = () => {
         <Link to='/'>
         <Avatar alt="Multi Paint & Construction" src={MultipconLogo} element={<Navigate exact to={'/'}/>}  sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}/>
         </Link>
-        <Link to='/'>
+        <Link to='/' style={{textDecoration: 'none'}}>
           <Typography
             variant="h6"
             noWrap
