@@ -5,6 +5,7 @@ import Footer from './components/footer/Footer';
 import {  Route, Routes, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Page404 from './pages/Page404';
+import AboutPage from './pages/AboutPage';
 
 
 
@@ -17,6 +18,8 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home/>}/>
         <Route path='/Home' element={<Navigate exact to={'/'}/>}/>
+
+        <Route path='/About' element={<AboutPage/>}/>
 
         <Route path='/404' element={<Page404/>}/>
         <Route path='*' element={<Navigate to={'/404'}/>} />
