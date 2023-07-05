@@ -14,7 +14,7 @@ export default function Waterproofing() {
             
         </Grid>
         <Grid item xs={12} lg={7} xl={7} justifyContent={'center'}>
-          <Box sx={{backgroundColor: '#262626',paddingBottom: '4%'}} height={'50.8vh'}>
+          <Box sx={{backgroundColor: '#262626',paddingBottom: '4%'}} height={'50.7vh'}>
           <Box>
             <Typography paragraph='true' variant='h1' sx={{textAlign: 'center', 
               fontSize: {xl: 32, lg: 30, md: 28, sm: 24, xs: 20}, 

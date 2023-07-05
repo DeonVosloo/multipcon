@@ -21,7 +21,7 @@ export default function AboutGrid() {
           We specialise in the following
         </Typography>
           </Grid>
-          <Grid item xs={12} sm={12} md={12} lg={12} sx={{marginTop: "6%"}} >
+          <Grid item xs={12} sm={12} md={12} lg={12} sx={{marginTop: "1%"}} >
             <WorkWeDo/>
           </Grid>
         </Grid>
