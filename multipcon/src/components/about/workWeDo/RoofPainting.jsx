@@ -7,7 +7,7 @@ export default function RoofPainting() {
     <Box sx={{ flexGrow: 0}}>
       <Grid container spacing={0}>
       
-      <Grid item xs={12} lg={7} xl={7} justifyContent={'center'}>
+      <Grid item xs={12} md={7} lg={7} xl={7} justifyContent={'center'}>
           <Box sx={{backgroundColor: '#262626',paddingBottom: '4%'}} height={'50.2vh'}>
           <Box>
             <Typography paragraph='true' variant='h1' sx={{textAlign: 'center', 
@@ -46,7 +46,7 @@ export default function RoofPainting() {
           </Box>
           </Box>
         </Grid>
-        <Grid item xs={12} lg={5} xl={5} justifyContent={'start'} display={'flex'}>
+        <Grid item xs={12} md={5} lg={5} xl={5} justifyContent={'start'} display={'flex'}>
           <Container  sx={{backgroundImage:`url(${RoofPaintingImage})`,
             backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center',
             height: '54.8vh', width: '100%'
