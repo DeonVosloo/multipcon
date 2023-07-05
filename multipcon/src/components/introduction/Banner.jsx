@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import BannerImage from '../../images/banner.svg';
+import BannerImage from '../../images/aboutBanner.jpg';
 
 function Banner() {
   return (
@@ -14,13 +14,13 @@ function Banner() {
     <Grid>
       <Grid item md={12}>
         <Typography component="h1" variant="h5" color="white" gutterBottom sx={{textAlign: "start", paddingLeft: "4%", paddingTop: "4%", fontFamily: `Ubuntu, sans-serif`, 
-        fontSize: {xl: 80, md: 55, xs: 32} , color: 'black'}}>
+        fontSize: {xl: 80, md: 55, xs: 32} , color: 'whitesmoke'}}>
           Multi Paint & Construction
         </Typography>
       </Grid>
       <Grid item md={9} xs={7}>
         <Typography component="h1" variant="h5" color="white" gutterBottom sx={{textAlign: "center", paddingTop: "4%", fontFamily: `Ubuntu, sans-serif`,
-        fontSize: {xl: 55, md: 40, xs: 24}, color: 'black'}}>
+        fontSize: {xl: 55, md: 40, xs: 24}, color: 'whitesmoke'}}>
          Welcome to our website
         </Typography>
       </Grid>

@@ -6,15 +6,15 @@ export default function Waterproofing() {
   return (
     <Box sx={{ flexGrow: 0}}>
       <Grid container spacing={0}>
-        <Grid item xs={12} md={5} lg={5} xl={5} justifyContent={'start'} display={'flex'}>
+        <Grid item xs={12} lg={5} xl={5} justifyContent={'start'} display={'flex'}>
           <Container  sx={{backgroundImage:`url(${WaterproofingImage})`,
             backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center',
             height: '55.4vh', width: '100%'
           }}/> 
             
         </Grid>
-        <Grid item xs={12} md={7} lg={7} xl={7} justifyContent={'center'}>
-          <Box sx={{backgroundColor: '#262626',paddingBottom: '4%'}} height={'50.7vh'}>
+        <Grid item xs={12} lg={7} xl={7} justifyContent={'center'}>
+          <Box sx={{backgroundColor: '#262626',paddingBottom: '4%'}} height={'50.8vh'}>
           <Box>
             <Typography paragraph='true' variant='h1' sx={{textAlign: 'center', 
               fontSize: {xl: 32, lg: 30, md: 28, sm: 24, xs: 20}, 
