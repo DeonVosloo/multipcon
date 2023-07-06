@@ -9,7 +9,7 @@ export default function Painting() {
       <Grid item xs={12} md={5} lg={5} xl={5} justifyContent={'start'} display={'flex'}>
           <Container  sx={{backgroundImage:`url(${PaintingImage})`,
             backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center',
-            height: '54.8vh', width: '100%'
+            height: '54.9vh', width: '100%'
           }}/> 
             
         </Grid>

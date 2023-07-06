@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import React from 'react'
-import WaterproofingImage from '../../../images/waterproofing.jpg'
+import WaterproofingImage from '../../../images/waterproofing.svg'
 
 export default function Waterproofing() {
   return (
