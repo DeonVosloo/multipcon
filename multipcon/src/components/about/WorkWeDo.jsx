@@ -12,9 +12,9 @@ import Paving from './workWeDo/Paving'
 export default function WorkWeDo() {
   return (
     <>
-    <Box sx={{ marginTop: "4%", flexGrow:0}}>
+    <Box sx={{ marginTop: "4%", flexGrow:0, backgroundColor: '#262626'}}>
         <Grid container spacing={0} >
-            <Grid item xs={12} sm={12} md={12} lg={12} sx={{marginTop: "3%"}} >
+            <Grid item xs={12} sm={12} md={12} lg={12} >
               <Waterproofing/>
             </Grid>
             <Grid item xs={12} sm={12} md={12} lg={12} >
