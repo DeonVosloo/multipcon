@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import BannerImage from '../../images/aboutBanner.jpg';
 
-function Banner() {
+function AboutBanner() {
   return (
     <Container maxWidth="5500" sx={{backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center",
     backgroundImage: `url(${BannerImage})`, height: {xl: '130%', xs: '130%', md:'130%', lg: '130%' }, border: {lg: 0, sm:0, md:0},
@@ -13,15 +13,15 @@ function Banner() {
         <Box component="div">
     <Grid>
       <Grid item md={12}>
-        <Typography component="h1" variant="h5" color="white" gutterBottom sx={{textAlign: "start", paddingLeft: "4%", paddingTop: "4%", fontFamily: `Ubuntu, sans-serif`, 
-        fontSize: {xl: 80, md: 55, xs: 32} , color: 'whitesmoke'}}>
+        <Typography component="h1" variant="h5" color="white" gutterBottom sx={{textAlign: "flex-start", paddingLeft: "4%", paddingTop: "4%", fontFamily: `Ubuntu, sans-serif`, 
+        fontSize: {xl: 80, md: 55, xs: 32} , color: 'white'}}>
           Multi Paint & Construction
         </Typography>
       </Grid>
       <Grid item md={9} xs={7}>
         <Typography component="h1" variant="h5" color="white" gutterBottom sx={{textAlign: "center", paddingTop: "4%", fontFamily: `Ubuntu, sans-serif`,
-        fontSize: {xl: 55, md: 40, xs: 24}, color: 'whitesmoke'}}>
-         Welcome to our website
+        fontSize: {xl: 55, md: 40, xs: 24}, color: 'white'}}>
+         About Us
         </Typography>
       </Grid>
     </Grid>
@@ -31,7 +31,7 @@ function Banner() {
   )
 }
 
-export default Banner
+export default AboutBanner
 
 
 
