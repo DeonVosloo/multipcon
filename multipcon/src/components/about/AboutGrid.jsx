@@ -11,7 +11,6 @@ export default function AboutGrid() {
         <Grid container spacing={2} sx={{display: "flex", justifyContent: "center", marginTop: "4%"}}>
           <Grid item xs={12} sm={11.5}  md={11} lg={10}> 
             <AboutBanner/>
-            <Typography>Hello Shaun</Typography>
           </Grid>
           <Grid item xs={11.} sm={11.5}  md={11} lg={10} sx={{marginTop: "6%"}}> 
             <Description/>
